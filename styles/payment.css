@@ -1,0 +1,100 @@
+/* хедер */
+
+.navbar-brand {
+    font-family: Delicious Handrawn;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.header {
+    box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.71);
+}
+
+.nav-link {
+    font-size: 18px;
+    font-family: Vollkorn SC;
+    color: black;
+}
+
+.btn-outline-success {
+    color: rgb(90, 90, 90);
+    border: 1px solid rgb(90, 90, 90);
+}
+
+.dropdown-menu {
+    background: linear-gradient(to bottom right, rgb(250, 161, 240), white, rgb(250, 161, 240));
+}
+
+/* меін */
+
+.payment-main {
+    background: linear-gradient(to top right, rgb(255, 188, 236), white, rgb(232, 192, 255));
+}
+
+.payment {
+    font-size: 20px;
+    font-family: Roboto Slab;
+}
+
+.payment-titel2 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Vollkorn SC;
+}
+
+.payment-titel3 {
+    margin-bottom: 30px;
+    font-family: Vollkorn SC;
+}
+
+.render {
+    font-size: 20px;
+    font-family: Roboto Slab;
+}
+
+.render-titel3 {
+    margin: 30px 0;
+    font-family: Vollkorn SC;
+}
+
+.message-titel3 {
+    margin: 30px 0;
+    font-family: Vollkorn SC;
+}
+
+.message {
+    font-size: 20px;
+    font-family: Roboto Slab;
+}
+
+.tracking-titel3 {
+    margin: 30px 0;
+    font-family: Vollkorn SC;
+}
+
+.tracking {
+    font-size: 20px;
+    font-family: Roboto Slab;
+}
+
+.compensation-titel3 {
+    margin: 30px 0;
+    font-family: Vollkorn SC;
+}
+
+.compensation {
+    font-size: 20px;
+    font-family: Roboto Slab;
+}
+
+/* footer */
+
+.footer {
+    height: 120px;
+    box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.71);
+}
+
+.footer-link {
+    font-size: 13x;
+}

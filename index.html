@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-pop Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Marck+Script&family=Vollkorn+SC&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">K-pop Shop</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Магазин</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./payment.html">Оплата та доставка</a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- <button type="button" class="btn btn-primary" aria-label="Open">Middle</button> -->
+                                <a class="nav-link" href="#">Кошик</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Каталог
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">AESPA</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">ASTRO</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">ATEEZ</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">BLACKPINK</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">BTS</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">ENHYPEN</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">EXO</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">G-IDLE</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">GOT7</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">ITZY</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">LE SERAFIM</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">NCT</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">NEWJEANS</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">STRAY KIDS</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">TWICE</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">TXT</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <!-- <div class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="row g-3 needs-validation" novalidate>
+                                <div class="col-md-4">
+                                    <label for="validationCustom01" class="form-label">First name</label>
+                                    <input type="text" class="form-control" id="validationCustom01" value="Mark"
+                                        required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="validationCustom02" class="form-label">Last name</label>
+                                    <input type="text" class="form-control" id="validationCustom02" value="Otto"
+                                        required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="validationCustomUsername" class="form-label">Username</label>
+                                    <div class="input-group has-validation">
+                                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                        <input type="text" class="form-control" id="validationCustomUsername"
+                                            aria-describedby="inputGroupPrepend" required>
+                                        <div class="invalid-feedback">
+                                            Please choose a username.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="validationCustom03" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="validationCustom03" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid city.
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="validationCustom04" class="form-label">State</label>
+                                    <select class="form-select" id="validationCustom04" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid state.
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="validationCustom05" class="form-label">Zip</label>
+                                    <input type="text" class="form-control" id="validationCustom05" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid zip.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                            required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            Agree to terms and conditions
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            You must agree before submitting.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary" type="submit">Submit form</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- hero -->
+
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="hero-titel">~Магазин K-pop товарів~</h1>
+            </div>
+        </section>
+
+        <!-- картки -->
+
+        <section class="card-section">
+            <div class="container">
+                <h2></h2>
+                <ul class="card-section__list">
+                    <li class="card-section__item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/bts1.jpg" class="card-img-top" alt="bts">
+                            <div class="card-body">
+                                <h5 class="card-title">K-POP АЛЬБОМ BTS – 2 COOL 4 SKOOL (1Й МІНІ АЛЬБОМ)</h5>
+                                <p class="card-text">Трек-лист:
+                                <ul>
+                                    <li>01. Intro: 2 Cool 4 Skool (Feat. DJ Friz)</li>
+                                    <li>02. We are Bulletproof PT.2</li>
+                                    <li>03. Skit: Circle Room Talk</li>
+                                    <li>04. No More Dream</li>
+                                    <li>05. Interlude</li>
+                                    <li>06. 좋아요</li>
+                                    <li>07. Outro : Circle Room Cypher</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">630 грн.</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-secondary">В кошик</button>
+                        </div>
+                    </li>
+                    <li class="card-section__item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/bts2.jpg" class="card-img-top" alt="bts">
+                            <div class="card-body">
+                                <h5 class="card-title">ОФІЦІЙНИЙ ЛАЙТСТІК BTS – OFFICIAL LIGHTSTICK (MOTS SPECIAL
+                                    EDITION)</h5>
+                                <p class="card-text">Що входить:
+                                <ul>
+                                    <li>Лайстик (розмір: 95,2 х 95,2 х 226,9 мм)</li>
+                                    <li>Сумочка від пилу</li>
+                                    <li>Шнурок на зап'ястя</li>
+                                    <li>Коробка</li>
+                                    <li>Набір фотокарток</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">2,440 грн.</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-secondary">В кошик</button>
+                        </div>
+                    </li>
+                    <li class="card-section__item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/bts3.png" class="card-img-top" alt="bts">
+                            <div class="card-body">
+                                <h5 class="card-title">K-POP АЛЬБОМ BTS – PROOF COMPACT EDITION</h5>
+                                <p class="card-text">До альбому входить:
+                                <ul>
+                                    <li>Фотобук (80 сторінок)</li>
+                                    <li>3 CD</li>
+                                    <li>Фотокартка</li>
+                                    <li>Листівка</li>
+                                    <li>Міні постер</li>
+                                    <li>Гід з дискографії</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1,040 грн.</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-secondary">В кошик</button>
+                        </div>
+                    </li>
+                    <li class="card-section__item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/bts4.png" class="card-img-top" alt="bts">
+                            <div class="card-body">
+                                <h5 class="card-title">K-POP АЛЬБОМ: JIMIN (BTS) – FACE</h5>
+                                <p class="card-text">Weverse версія:
+                                <ul>
+                                    <li>Зовнішня коробка</li>
+                                    <li>Буклет (28 сторінок)</li>
+                                    <li>Лірік</li>
+                                    <li>Гайд з використання</li>
+                                    <li>QR листівка</li>
+                                    <li>Замітка</li>
+                                    <li>Фотокартка</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1,100 грн.</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-secondary">В кошик</button>
+                        </div>
+                    </li>
+                    <li class="card-section__item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/BlackPink1.png" class="card-img-top" alt="BlackPink">
+                            <div class="card-body">
+                                <h5 class="card-title">K-POP АЛЬБОМ BLACK PINK – THE ALBUM (1Й ПОВНОФОРМАТНИЙ АЛЬБОМ)
+                                </h5>
+                                <p class="card-text">До альбому входить:
+                                <ul>
+                                    <li>Фотобук</li>
+                                    <li>Набір фотокарток</li>
+                                    <li>Буклет з текстами пісень</li>
+                                    <li>Аркуш з авторством</li>
+                                    <li>Фотокартки 2 шт</li>
+                                    <li>Листівки 2 шт</li>
+                                    <li>Змонтована фотокартка</li>
+                                    <li>CD диск</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1,440 грн.</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-secondary">В кошик</button>
+                        </div>
+                    </li>
+                    <li class="card-section__item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/BlackPink2.png" class="card-img-top" alt="BlackPink">
+                            <div class="card-body">
+                                <h5 class="card-title">ОФІЦІЙНИЙ ЛАЙТСТІК BLACKPINK – OFFICIAL BLINK LIGHTSTICK VER.2
+                                </h5>
+                                <p class="card-text">
+                                <ul>
+                                    <li>Лайстик (розмір: 100 х 100 х 226,9 мм)</li>
+                                    <li>Сумочка від пилу</li>
+                                    <li>Шнурок на зап'ястя</li>
+                                    <li>Коробка</li>
+                                    <li>Набір фотокарток</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">2,800 грн.</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-secondary">В кошик</button>
+                        </div>
+                    </li>
+                    <li class="card-section__item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/BlackPink3.jpg" class="card-img-top" alt="BlackPink">
+                            <div class="card-body">
+                                <h5 class="card-title">K-POP АЛЬБОМ BLACKPINK – HOW YOU LIKE THAT</h5>
+                                <p class="card-text">До альбому входить:
+                                <ul>
+                                    <li>Фотобук (132 сторінки)</li>
+                                    <li>Листівка</li>
+                                    <li>Набір фотокарток</li>
+                                    <li>Полароїд фото</li>
+                                    <li>Постер у складеному вигляді</li>
+                                    <li>CD диск</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1,210 грн.</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-secondary">В кошик</button>
+                        </div>
+                    </li>
+                    <li class="card-section__item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/BlackPink4.jpg" class="card-img-top" alt="BlackPink">
+                            <div class="card-body">
+                                <h5 class="card-title">K-POP АЛЬБОМ LISA (BLACK PINK) – LALISA (1Й СИНГЛ АЛЬБОМ)</h5>
+                                <p class="card-text">До альбому входить:
+                                <ul>
+                                    <li>Фотобук (88 сторінок)</li>
+                                    <li>Листівка</li>
+                                    <li>Книжка з текстами</li>
+                                    <li>Полароїд фото</li>
+                                    <li>Постер у складеному вигляді</li>
+                                    <li>CD диск</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1,380 грн.</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-secondary">В кошик</button>
+                        </div>
+                    </li>
+                    <li class="card-section__item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/StrayKids1.png" class="card-img-top" alt="StrayKids">
+                            <div class="card-body">
+                                <h5 class="card-title">K-POP STRAY KIDS – THE SOUND ЛІМІТОВАНА ВЕРСІЯ B (1Й ЯПОНСЬКИЙ
+                                    АЛЬБОМ)</h5>
+                                <p class="card-text">До альбому входити:
+                                <ul>
+                                    <li>CD</li>
+                                    <li>Фотобук (32 сторінки)</li>
+                                    <li>Фотокартка</li>
+                                    <li>Фотостікер</li>
+                                    <li>Спеціальний журнал (28 сторінок)</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">2,780 грн.</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-secondary">В кошик</button>
+                        </div>
+                    </li>
+                    <li class="card-section__item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/StrayKids2.jpg" class="card-img-top" alt="StrayKids">
+                            <div class="card-body">
+                                <h5 class="card-title">ОФІЦІЙНИЙ ЛАЙТСТИК STRAY KIDS – OFFICIAL LIGHT STICK</h5>
+                                <p class="card-text">
+                                    Розмір: 84 x 95 x 231 мм
+                                    Батарейки НЕ ВХОДЯТЬ У КОМПЛЕКТАЦІЮ.
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1,740 грн.</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-secondary">В кошик</button>
+                        </div>
+                    </li>
+                    <li class="card-section__item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/TXT1.png" class="card-img-top" alt="TXT">
+                            <div class="card-body">
+                                <h5 class="card-title">ОФІЦІЙНИЙ ЛАЙТСТІК TXT – OFFICIAL LIGHT STICK</h5>
+                                <p class="card-text">Батарейки НЕ ВХОДЯТИ У КОМПЛЕКТАЦІЮ.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">2,660 грн.</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-secondary">В кошик</button>
+                        </div>
+                    </li>
+                    <li class="card-section__item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/TXT2.png" class="card-img-top" alt="TXT">
+                            <div class="card-body">
+                                <h5 class="card-title">K-POP АЛЬБОМ TXT – THE NAME CHAPTER</h5>
+                                <p class="card-text">До альбому входити:
+                                <ul>
+                                    <li>CD</li>
+                                    <li>Фотобук (84 сторінки)</li>
+                                    <li>Лірік бук (16 сторінок)</li>
+                                    <li>Стікери</li>
+                                    <li>Закладка</li>
+                                    <li>Листівка</li>
+                                    <li>Фотокартка</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1,010 грн.</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-secondary">В кошик</button>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- навігація -->
+
+                <nav aria-label="...">
+                    <ul class="pagination pagination-sm">
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">1</span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">K-pop Shop</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                            <li class="nav-item">
+                                <a class="nav-link active footer-link" aria-current="page" href="#">Магазин</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link footer-link" href="#">Оплата та доставка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link footer-link" href="#">Кошик</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
